@@ -62,19 +62,9 @@ You should see a connection error indicating Telnet is blocked.
 ```cmd
 ssh <username>@<IP_Address>
 ```
-
-## 5. Remove the Rules (Optional)
-
-To remove these firewall rules:
-
-```cmd
-netsh advfirewall firewall delete rule name="Block Telnet"
-netsh advfirewall firewall delete rule name="Allow SSH"
-```
-
 ---
 ## 6. Remove the Test Block Rule
 
 Go back to the Inbound Rules section in Windows Firewall with Advanced Security.
-
 Find the rule you created (e.g., "Block Telnet" and "allow SSH").
+Right-click on the rule and select Delete.
