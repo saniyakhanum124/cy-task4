@@ -1,0 +1,18 @@
+# Firewall Configuration File
+# Description: Documenting firewall rules for blocking Telnet and allowing SSH.
+
+[Rule 1]
+Name: Block Telnet
+Action: Block
+Port: 23
+Protocol: TCP
+Direction: Inbound
+Description: This rule blocks incoming traffic on port 23 (Telnet) to prevent unauthorized access.
+
+[Rule 2]
+Name: Allow SSH
+Action: Allow
+Port: 22
+Protocol: TCP
+Direction: Inbound
+Description: This rule allows incoming traffic on port 22 for SSH (secure shell) access to the server.
